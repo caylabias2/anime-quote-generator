@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Komika';
+    src: url(fonts/komika_title/KOMTIT__.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Komika';
+    color: white;
+}
+
+html {
+    width: 100%;
+    scroll-padding-top: 80px;
+    color: white;
+}
+
+body {
+    width: 100%;
+    background-image: url(images/cloud-background.jpg);
+    background-size: cover;
+}
+
+header, footer {
+    text-align: center;
+    
+}
+
+header h1 {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: black;
+    box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.30);
+}
+
+header span {
+    color: rgb(211, 41, 41);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around; /* or space-between */
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-links a {
+    padding: 1.8%;
+    flex-grow: 1;              /* makes them expand */
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2.9rem;
+}
+
+
+.navbar a:hover {
+    box-shadow: 3px 8px 73px -31px rgba(0,0,0,0.42) inset;
+    color: rgb(211, 41, 41);
+}
+
+
+
+#anime-grid {
+    margin: 4vw 0;
+}
+
+section {
+    color: black;
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    height: 20rem;
+    margin: 0 auto;
+    margin-top: 5vh;
+    background-color: pink;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px 5px rgba(32, 32, 32, 0.678);
+}
+
+.container h1 {
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.left {
+    width: 70%;
+    text-align: center;
+}
+
+.anime-image {
+    width: 90%;
+    height: 78%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.726);
+
+    /* Center content */
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    align-items: center;       /* Vertical center */
+    text-align: center;        /* Center text inside the <p> */
+}
+
+.anime-image p {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px; /* adjust as needed */
+    overflow-y: auto;  /* adds scroll if too long */
+}
+    
+button {
+    color: black;
+    padding:  0 20px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black
+}
+
+button:hover {
+    background-color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.right {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    height: 94%;
+    margin-right: 3vw;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.right h3 {
+    color: black;
+    margin-bottom: -3vh;
+    
+}
+
+form {
+    padding: 30px 0;
+}
+
+input[type="radio"]{
+   margin: 15px 0;
+}
+
+label {
+    color:black;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: black;
+    font-size: 10px;
+}
+
+footer span {
+    color: rgb(211, 41, 41);
+}
+
+
+
+@media(min-width: 707px) {
+    label {
+        font-size: 1.2em;
+    }
+    form {
+        padding: 43px 0;
+    }
+    .anime-image p {
+        font-size: 19px;
+    }
+}
+
